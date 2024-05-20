@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  transition: 0.6s;
+}
+
+h1 {
+  margin: 0;
+  font-family: Verdana;
+  word-spacing: 0px;
+  transition: 0.6s;
+}
+
+p {
+  font-family: Verdana;
+  font-size: 25px;
+}
+
+.outer-div {
+  text-align: center;
+}
+
+.container {
+  display: inline-block;
+  padding: 50px 80px;
+  background-color: lightpink;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+button {
+  font-size: 25px;
+  border: solid;
+  border-width: 0.6px;
+  border-radius: 4px;
+  padding: 8px 10px;
+  transition: 0.6s;
+  cursor: pointer;
+  background-color: transparent;
+  transition: all 0.4s;
+}
+
+button:hover {
+  background-color: transparent;
+  color: rgb(43, 43, 43);
+  box-shadow: 0 4px 10px rgb(162, 201, 252);
+
+}
+
+button:active {
+  box-shadow: none;
+}
