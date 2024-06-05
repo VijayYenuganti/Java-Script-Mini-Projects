@@ -2,28 +2,37 @@
 <html lang="en">
 
 <head>
+  <!-- Meta information about the document -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Title of the document -->
   <title>Java Script</title>
-
+  <!-- Link to the external CSS stylesheet -->
   <link rel="stylesheet" href="istyle.css">
 </head>
 
 <body>
   <div>
+    <!-- Section heading -->
     <h3>Temperature Conversion</h3>
-    <input type="number" id="myText" value="0"><br>  <!--text box-->
+    <!-- Input field for entering a number (temperature value) -->
+    <input type="number" id="myText" value="0"><br>
 
-    <input type="radio" name="unit" id="tofahrenheit"> 
+    <!-- Radio button for selecting Celsius to Fahrenheit conversion -->
+    <input type="radio" name="unit" id="tofahrenheit">
     <label for="tofahrenheit">Celsius → Fahrenheit</label><br>
 
+    <!-- Radio button for selecting Fahrenheit to Celsius conversion -->
     <input type="radio" name="unit" id="toCelsius">
     <label for="toCelsius">Fahrenheit → Celsius</label><br>
 
+    <!-- Button to submit the conversion request -->
     <button id="mySubmit" onclick="convert()">Submit</button>
+    <!-- Paragraph element to display the conversion result -->
     <p id="resultElement"></p>
   </div>
 
+  <!-- Link to the external JavaScript file -->
   <script src="Index.js"></script>
 </body>
 
