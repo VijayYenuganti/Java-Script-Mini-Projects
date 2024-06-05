@@ -1,0 +1,66 @@
+/* The main body of the HTML document */
+body {
+  display: flex;  /* Use flexbox layout */
+  justify-content: center;  /* Center content horizontally */
+  align-items: center;  /* Center content vertically */
+  height: 100vh;  /* Set height to 100% of the viewport height */
+  font-family: Verdana;  /* Set font family to Verdana */
+  margin: 0;  /* Remove default margin */
+  background-color: hsl(195, 21%, 85%);  /* Set background color using HSL values */
+}
+
+/* Style for all div elements */
+div {
+  background-color: white;  /* Set background color to white */
+  display: inline-block;  /* Display as inline-block */
+  text-align: center;  /* Center text horizontally */
+  padding: 20px 30px;  /* Add padding inside the div */
+  border-radius: 10px;  /* Round the corners */
+  background-image: url(mountain.jpg);  /* Set background image */
+  background-size: cover;  /* Cover the entire div with the background image */
+  background-repeat: no-repeat;  /* Prevent background image from repeating */
+}
+
+/* Style for elements with id 'tofahrenheit' and 'toCelsius' */
+#tofahrenheit,
+#toCelsius {
+  cursor: pointer;  /* Change cursor to pointer on hover */
+  margin: 6px;  /* Add margin around the elements */
+}
+
+/* Style for label elements */
+label {
+  font-weight: 550;  /* Set font weight */
+}
+
+/* Style for element with id 'myText' */
+#myText {
+  text-align: center;  /* Center text horizontally */
+  padding: 10px;  /* Add padding inside the element */
+  font-size: 20px;  /* Set font size */
+  border-radius: 5px;  /* Round the corners */
+  border: solid 1px;  /* Add solid border with 1px width */
+  margin-bottom: 15px;  /* Add margin at the bottom */
+}
+
+/* Style for button elements */
+button {
+  margin-top: 20px;  /* Add margin at the top */
+  padding: 6px 10px;  /* Add padding inside the button */
+  background-color: transparent;  /* Set background color to transparent */
+  border-radius: 3px;  /* Round the corners */
+  color: aliceblue;  /* Set text color */
+  border: solid 1px;  /* Add solid border with 1px width */
+  cursor: pointer;  /* Change cursor to pointer on hover */
+}
+
+/* Style for button elements when active (clicked) */
+button:active {
+  border: none;  /* Remove border */
+}
+
+/* Style for element with id 'resultElement' */
+#resultElement {
+  color: hsl(97, 100%, 75%);  /* Set text color using HSL values */
+  font-weight: bold;  /* Make text bold */
+}
