@@ -1,0 +1,82 @@
+/* Ensures the body takes up the full viewport height and centers content */
+body {
+  margin: 0; /* Removes default margin */
+  height: 100vh; /* Full viewport height */
+  display: flex; /* Enables flexbox layout */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  font-family: "Poppins", "sans-serif"; /* Sets font family */
+  background-color: rgb(211, 230, 246); /* Sets background color */
+}
+
+/* Styles for the primary button */
+.btn-primary {
+  background-color: #007bff; /* Button background color */
+  border: none; /* Removes border */
+  color: white; /* Text color */
+  padding: 15px; /* Padding inside the button */
+  border-radius: 5px; /* Rounds the corners */
+  width: 100%; /* Full width */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: all 0.3s; /* Transition effect */
+}
+
+/* Hover effect for the primary button */
+.btn-primary:hover {
+  background-color: #0056b3; /* Darker background on hover */
+}
+
+/* Styles for the show/hide password button */
+.btn-show {
+  position: absolute; /* Positioned within the form group */
+  right: 5px; /* Right-aligned */
+  top: 50%; /* Centered vertically */
+  transform: translateY(-50%); /* Adjusted for perfect centering */
+  background: transparent; /* Transparent background */
+  border: none; /* No border */
+  color: #6c6d6d; /* Text color */
+  font-size: 20px; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Styles for the form container */
+.form {
+  width: 300px; /* Form width */
+  height: 450px; /* Form height */
+  border-radius: 20px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  padding: 40px; /* Padding inside the form */
+  background-color: white; /* Background color */
+  color: rgb(27, 26, 26); /* Text color */
+  display: flex; /* Flexbox layout */
+  flex-direction: column; /* Arranges items in a column */
+  align-items: center; /* Centers content horizontally */
+  gap: 10px; /* Gap between items */
+}
+
+/* Margin below the form header */
+.form h1 {
+  margin-bottom: 20px;
+}
+
+/* Styles for the input fields */
+.form input {
+  padding: 15px; /* Padding inside the input */
+  border-radius: 5px; /* Rounded corners */
+  border: none; /* No border */
+  background: rgb(227, 225, 225); /* Background color */
+  width: 90%; /* Almost full width */
+}
+
+/* Styles for the image inside the form */
+.form img {
+  width: 200px; /* Image width */
+  height: 200px; /* Image height */
+  object-fit: cover; /* Ensures the image covers the area */
+}
+
+/* Styles for the form group */
+.form-group {
+  position: relative; /* Positioned relative to its container */
+  width: 100%; /* Full width */
+}
