@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>File DropZone</title>
+  <link rel="stylesheet" href="Style.css">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap"
+        rel="stylesheet"
+    >
+</head>
+<body>
+  <form class="dropzone-box">
+    <h2>Upload and attach files</h2>
+    <p>Click to upload or Drag and Drop</p>
+    <div class="dropzone-area">
+      <div class="file-upload-icon">
+        <!-- SVG Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5m-13.5-9L12 3m0 0 4.5 4.5M12 3v13.5" />
+        </svg>
+        
+      </div>
+      <input type="file" name="uploaded-file" id="upload-file" required>
+      <p class="file-info">No Files Selected</p>
+    </div>
+    <div class="dropzone-actions">
+      <button type="reset">
+        Cancel
+      </button>
+      <button id="submit-button" type="submit">
+        Save
+      </button>
+    </div>
+  </form>
+
+  <script src="Script.js"></script>
+</body>
+</html>
