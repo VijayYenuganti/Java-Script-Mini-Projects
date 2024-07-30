@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Specifies the character encoding for the HTML document -->
+  <meta charset="UTF-8">
+  <!-- Sets the viewport to make the website responsive -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Title of the webpage -->
+  <title>Login Page</title>
+  <!-- Links the external CSS file for styling -->
+  <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+  <!-- Form for login -->
+  <form action="" class="form">
+    <!-- Image at the top of the form -->
+    <img src="Images/Log.jpg" alt="Login Image">
+    <!-- Header for the login form -->
+    <h1>Login</h1>
+    <!-- Input field for email -->
+    <input type="email" placeholder="Email">
+    <!-- Grouping password input and show/hide button -->
+    <div class="form-group">
+      <!-- Input field for password -->
+      <input type="password" name="password" id="password" placeholder="Password">
+      <!-- Button to show/hide password -->
+      <button class="btn-show" type="button" onclick="switchPasswordType()">
+        <i id="passIcon" class="bi-bi-eye"></i>
+      </button>
+    </div>
+    <!-- Login button -->
+    <button class="btn-primary">Login</button>
+  </form>
+  <!-- Links the external JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
