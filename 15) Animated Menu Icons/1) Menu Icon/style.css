@@ -1,0 +1,144 @@
+/**
+ * ===== Reset Styles =====
+ *
+ * @format
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== Body Styles ===== */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f0f2f5;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ===== Container ===== */
+.container {
+  position: relative;
+}
+
+/* ===== Menu Toggle Button ===== */
+.menu-toggle {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.5s;
+  z-index: 2;
+}
+
+.menu-toggle span {
+  position: absolute;
+  width: 35px;
+  height: 3px;
+  background: #333;
+  border-radius: 3px;
+  transition: 0.5s;
+}
+
+.menu-toggle span:nth-child(1) {
+  transform: translateY(-10px);
+}
+
+.menu-toggle span:nth-child(2) {
+  transform: translateY(0);
+}
+
+.menu-toggle span:nth-child(3) {
+  transform: translateY(10px);
+}
+
+/* ===== Dropdown Menu ===== */
+.dropdown-menu {
+  position: absolute;
+  top: 70px;
+  width: 300px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+  transition: all 0.5s;
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.menu-group {
+  width: 50%;
+}
+
+.menu-group h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+  border-bottom: 2px solid #1863ff;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.menu-group ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.menu-group ul li {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #555;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.menu-group ul li img,
+.menu-group ul li i {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.menu-group ul li:hover {
+  color: #1863ff;
+}
+
+/* ===== Active States ===== */
+.menu-toggle.active span:nth-child(1) {
+  transform: translateY(0) rotate(45deg);
+}
+
+.menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+  transform: translateY(0) rotate(-45deg);
+}
+
+.menu-toggle.active {
+  transform: rotate(360deg);
+}
+
+.menu-toggle.active ~ .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
