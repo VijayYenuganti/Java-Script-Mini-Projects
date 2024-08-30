@@ -1,0 +1,83 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animated Dropdown Menu</title>
+    <!-- ===== Link to CSS ===== -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- ===== Font Awesome for Icons ===== -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-QReM9x07Xf6y+V2bOaOzpYg9+8Xx5Y+XD7uDR3vV1Plfb2J6z5b0hJp+g0dJDj0vBfnZlPqgV3zp9J1H2mV8w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="dropdown-menu">
+        <div class="menu-group">
+          <h3>Languages</h3>
+          <ul>
+            <li>
+              <img src="https://flagcdn.com/w20/de.png" alt="German Flag" />
+              German
+            </li>
+            <li>
+              <img src="https://flagcdn.com/w20/gb.png" alt="English Flag" />
+              English
+            </li>
+            <li>
+              <img src="https://flagcdn.com/w20/fr.png" alt="French Flag" />
+              French
+            </li>
+          </ul>
+        </div>
+        <div class="menu-group">
+          <h3>Menu Items</h3>
+          <ul>
+            <li><i class="fas fa-home"></i> Item 1</li>
+            <li><i class="fas fa-user"></i> Item 2</li>
+            <li><i class="fas fa-cog"></i> Item 3</li>
+            <li><i class="fas fa-info-circle"></i> Item 4</li>
+            <li><i class="fas fa-envelope"></i> Item 5</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== JavaScript ===== -->
+    <script>
+      // Selecting the menu toggle button and dropdown menu
+      const menuToggle = document.querySelector(".menu-toggle");
+      const dropdownMenu = document.querySelector(".dropdown-menu");
+
+      // Toggle function
+      menuToggle.addEventListener("click", () => {
+        menuToggle.classList.toggle("active");
+        dropdownMenu.classList.toggle("active");
+      });
+
+      // Close the menu when clicking outside
+      document.addEventListener("click", (e) => {
+        if (
+          !menuToggle.contains(e.target) &&
+          !dropdownMenu.contains(e.target) &&
+          dropdownMenu.classList.contains("active")
+        ) {
+          menuToggle.classList.remove("active");
+          dropdownMenu.classList.remove("active");
+        }
+      });
+    </script>
+  </body>
+</html>
